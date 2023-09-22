@@ -17,3 +17,7 @@ func _on_mob_timer_timeout():
 	
 	# Spawn mob by adding to Main scene
 	add_child(mob)
+
+
+func _on_player_hit():
+	$MobTimer.stop()
